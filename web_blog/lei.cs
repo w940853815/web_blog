@@ -60,5 +60,81 @@ namespace ASPNETAJAXWeb.AjaxLeaveword
             }
             return result;
         }
+        public int DeleteMessage(int messageID) 
+        {
+            string connectionString=ConfigurationManager.ConnectionStrings["SQLCONNECTIONSTRING"].ConnectionString;
+            SqlConnection con = new SqlConnection(connectionString);
+            string cmdText = "DELETE Message WHERE ID=@ID";
+            SqlCommand cmd = new SqlCommand(cmdText,con);
+            cmd.Parameters.Add("@ID",SqlDbType.Int,4);
+            cmd.Parameters[0].Value = messageID;
+            int result = -1;
+            try
+            {
+                con.Open();
+                result = cmd.ExecuteNonQuery();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message, ex);
+            }
+            finally 
+            {
+                con.Close();
+            }
+            return result;
+        }
+        public DataSet GetReplyByMessage(int messageID) 
+        {
+            string connectionString=ConfigurationManager.ConnectionStrings["SQLCONNECTIONSTRING"].ConnectionString;
+            SqlConnection con = new SqlConnection(connectionString);
+            string cmdText = "SELECT * FROM Reply WHERE MessageID=@MessageID Order by CreateDate DESC";
+            SqlDataAdapter da = new SqlDataAdapter(cmdText,con);
+            da.SelectCommand.Parameters.Add("@MessageID",SqlDbType.Int,4);
+            da.SelectCommand.Parameters[0].Value = messageID;
+            DataSet ds = new DataSet();
+            try
+            {
+                con.Open();
+                da.Fill(ds,"DataTable");
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message,ex);
+            }
+            finally 
+            {
+                con.Close();
+            }
+            return ds;
+        }
+        public int AddReply(string message,string ip,int messageID) 
+        {
+            string connectionString=ConfigurationManager.ConnectionStrings["SQLCONNECTIONSTRING"].ConnectionString;
+            SqlConnection con = new SqlConnection(connectionString);
+            string cmdText = "INSERT INTO Reply(Reply,IP,CreatDate,MessageID)VALUES(@Reply,@IP,GETDATE(),@MessageID)";
+            SqlCommand cmd = new SqlCommand(cmdText,con);
+            cmd.Parameters.Add("@Reply",SqlDbType.VarChar,1000);
+            cmd.Parameters.Add("@IP",SqlDbType.VarChar,20);
+            cmd.Parameters.Add("@MessageID",SqlDbType.Int,4);
+            cmd.Parameters[0].Value = message;
+            cmd.Parameters[1].Value = ip;
+            cmd.Parameters[2].Value = messageID;
+            int result=-1;
+            try
+            {
+                con.Open();
+                result = cmd.ExecuteNonQuery();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message, ex);
+            }
+            finally 
+            {
+                con.Close();
+            }
+            return result;
+        }    
     }
 }
