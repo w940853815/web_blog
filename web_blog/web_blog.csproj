@@ -38,6 +38,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.4.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -63,6 +67,7 @@
     <Content Include="Index.aspx" />
     <Content Include="LiuyanFen.aspx" />
     <Content Include="Web.config" />
+    <Content Include="web.css" />
     <Content Include="Yanzhengma.aspx" />
   </ItemGroup>
   <ItemGroup>
