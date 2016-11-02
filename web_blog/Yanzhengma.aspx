@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Yanzhengma.aspx.cs" Inherits="web_blog.Yanzhengma" %>
-
+<%@ Page Language="C#" AutoEventWireup="false" Inherits="ASPNETAJAXWeb.ValidateCode.Page.ValidateCode" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
