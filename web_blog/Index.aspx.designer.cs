@@ -49,13 +49,13 @@ namespace web_blog {
         protected global::System.Web.UI.WebControls.GridView gvMessage;
         
         /// <summary>
-        /// bTitle 控件。
+        /// tbTitle 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox bTitle;
+        protected global::System.Web.UI.WebControls.TextBox tbTitle;
         
         /// <summary>
         /// rfTitle 控件。

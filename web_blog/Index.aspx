@@ -50,7 +50,7 @@
             </tr>
               <td>留言标题：</td>
         <td width="90%">
-            <asp:TextBox ID="bTitle" runat="server" SkinID="nn" Width="80%"></asp:TextBox>
+            <asp:TextBox ID="tbTitle" runat="server" SkinID="nn" Width="80%"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfTitle" runat="server" ControlToValidate="tbTitle" ErrorMessage="标题不能为空！"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="revTitle" runat="server" ControlToValidate="tbTitle" Display="Dynamic" ErrorMessage="标题不能为空！" ValidationExpression=".+"></asp:RegularExpressionValidator>
             <ajaxToolkit:TextBoxWatermarkExtender ID="wmeTitle" runat="server" TargetControlID="tbTitle" WatermarkText="请输入留言标题" WatermarkCssClass="Watermark"></ajaxToolkit:TextBoxWatermarkExtender>
