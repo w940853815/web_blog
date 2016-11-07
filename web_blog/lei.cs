@@ -13,7 +13,7 @@ namespace ASPNETAJAXWeb.AjaxLeaveword
         {
             string connectionString = ConfigurationManager.ConnectionStrings["SQLCONNECTSTRING"].ConnectionString;
             SqlConnection con = new SqlConnection(connectionString);
-            string cmdText = "SELECT * FROM Message Order by CreatDate DESC";
+            string cmdText = "SELECT * FROM Message Order by CreateDate DESC";
             SqlDataAdapter da = new SqlDataAdapter(cmdText,con);
             DataSet ds = new DataSet();
             try

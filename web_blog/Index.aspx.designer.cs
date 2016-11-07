@@ -76,6 +76,15 @@ namespace web_blog {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revTitle;
         
         /// <summary>
+        /// wmeTitle 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::AjaxControlToolkit.TextBoxWatermarkExtender wmeTitle;
+        
+        /// <summary>
         /// tbIP 控件。
         /// </summary>
         /// <remarks>
@@ -112,6 +121,15 @@ namespace web_blog {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revEmail;
         
         /// <summary>
+        /// vceEmail 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::AjaxControlToolkit.ValidatorCalloutExtender vceEmail;
+        
+        /// <summary>
         /// tbMessage 控件。
         /// </summary>
         /// <remarks>
@@ -128,6 +146,24 @@ namespace web_blog {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.CustomValidator cvMessage;
+        
+        /// <summary>
+        /// wmeMessage 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::AjaxControlToolkit.TextBoxWatermarkExtender wmeMessage;
+        
+        /// <summary>
+        /// vceMessage 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::AjaxControlToolkit.ValidatorCalloutExtender vceMessage;
         
         /// <summary>
         /// tbCode 控件。

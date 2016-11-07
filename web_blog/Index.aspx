@@ -81,7 +81,7 @@
             <td>验证码：</td>
             <td width="90%">
                 <asp:TextBox ID="tbCode" runat="server" SkinID="nn" Width="80px"></asp:TextBox>
-                <asp:Image ID="imgCode" runat="server" ImageUrl="~/Yanzhengma.aspx" />
+                <asp:Image ID="imgCode" runat="server" ImageUrl="Yanzhengma.aspx"/>
                 <asp:Label ID="lbMessage" runat="server" ForeColor="Red" CssClass="Text"></asp:Label>
             </td>
         </tr>
