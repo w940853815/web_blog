@@ -10,7 +10,7 @@
 namespace web_blog {
     
     
-    public partial class Guanli {
+    public partial class BoardManage {
         
         /// <summary>
         /// form1 控件。
@@ -20,5 +20,32 @@ namespace web_blog {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
+        /// <summary>
+        /// sm 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager sm;
+        
+        /// <summary>
+        /// up 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel up;
+        
+        /// <summary>
+        /// gvMessage 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvMessage;
     }
 }
