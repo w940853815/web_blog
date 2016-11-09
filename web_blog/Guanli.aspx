@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Guanli.aspx.cs" Inherits="web_blog.BoardManage" StylesheetTheme="css" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Guanli.aspx.cs" Inherits="web_blog.BoardManage" StylesheetTheme="mm" %>
 
 <%@ Register assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" namespace="System.Web.UI.DataVisualization.Charting" tagprefix="asp" %>
 

@@ -14,10 +14,10 @@
 <asp:Button runat="server" SkinID="anniu" BackColor="red" Font-Name="Tahoma" Font-Size="9pt" CssClass="Button" />
 <asp:TextBox runat="server" SkinID="nn" BackColor="green" Font-Name="Tahoma" />
 <asp:GridView SkinID="mm" runat="server" GridLines="Both" CssClass="Text" BackColor="White" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" CellPadding="4" AutoGenerateColumns="False" Font-Name="Tahoma" Width="100%">
-    <FooterStyle BackColor="#E8F4FF" ForeColor="330099" />
+    <FooterStyle BackColor="#E8F4FF" ForeColor="#330099" />
     <AlternatingRowStyle BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
 <RowStyle BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
-<SelectedRowStyle BackColor="E8F4FF" Font-Bold="True" ForeColor="#663399" />
-<PagerStyle BackColor="E8F4FF" ForeColor="#330099" HorizontalAlign="Center" />
+<SelectedRowStyle BackColor="#E8F4FF" Font-Bold="True" ForeColor="#663399" />
+<PagerStyle BackColor="#E8F4FF" ForeColor="#330099" HorizontalAlign="Center" />
 <Headerstyle BackColor="#333333" Font-Bold="True" ForeColor="yellow" Font-Names="Tahoma" BorderStyle="Solid" BorderWidth="1px" />
 </asp:GridView>

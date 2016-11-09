@@ -35,11 +35,12 @@ namespace ASPNETAJAXWeb.AjaxLeaveword
         {
             string connectionString = ConfigurationManager.ConnectionStrings["SQLCONNECTSTRING"].ConnectionString;
             SqlConnection con = new SqlConnection(connectionString);
-            string cmdText = "INSERT INTO Message(Title,Message,IP,Email,CreatDate,Status)VALUES(@Title,@Message,@IP,@Email,GETDATE(),0)";
+            string cmdText = "INSERT INTO Message(Title,Message,IP,Email,CreateDate,Status)VALUES(@Title,@Message,@IP,@Email,GETDATE(),0)";
             SqlCommand cmd = new SqlCommand(cmdText,con);
             cmd.Parameters.Add("@Title",SqlDbType.VarChar,200);
             cmd.Parameters.Add("@Message",SqlDbType.Text);
             cmd.Parameters.Add("@IP",SqlDbType.VarChar,255);
+            cmd.Parameters.Add("@Email",SqlDbType.VarChar,255);
             cmd.Parameters[0].Value = title;
             cmd.Parameters[1].Value = message;
             cmd.Parameters[2].Value = ip;
@@ -62,7 +63,7 @@ namespace ASPNETAJAXWeb.AjaxLeaveword
         }
         public int DeleteMessage(int messageID) 
         {
-            string connectionString=ConfigurationManager.ConnectionStrings["SQLCONNECTIONSTRING"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["SQLCONNECTSTRING"].ConnectionString;
             SqlConnection con = new SqlConnection(connectionString);
             string cmdText = "DELETE Message WHERE ID=@ID";
             SqlCommand cmd = new SqlCommand(cmdText,con);
@@ -86,7 +87,7 @@ namespace ASPNETAJAXWeb.AjaxLeaveword
         }
         public DataSet GetReplyByMessage(int messageID) 
         {
-            string connectionString=ConfigurationManager.ConnectionStrings["SQLCONNECTIONSTRING"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["SQLCONNECTSTRING"].ConnectionString;
             SqlConnection con = new SqlConnection(connectionString);
             string cmdText = "SELECT * FROM Reply WHERE MessageID=@MessageID Order by CreateDate DESC";
             SqlDataAdapter da = new SqlDataAdapter(cmdText,con);
@@ -110,7 +111,7 @@ namespace ASPNETAJAXWeb.AjaxLeaveword
         }
         public int AddReply(string message,string ip,int messageID) 
         {
-            string connectionString=ConfigurationManager.ConnectionStrings["SQLCONNECTIONSTRING"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["SQLCONNECTSTRING"].ConnectionString;
             SqlConnection con = new SqlConnection(connectionString);
             string cmdText = "INSERT INTO Reply(Reply,IP,CreatDate,MessageID)VALUES(@Reply,@IP,GETDATE(),@MessageID)";
             SqlCommand cmd = new SqlCommand(cmdText,con);

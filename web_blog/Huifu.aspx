@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Huifu.aspx.cs" Inherits="web_blog.Reply" StylesheetTheme="css" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Huifu.aspx.cs" Inherits="web_blog.Reply" StylesheetTheme="mm" %>
 
 <!DOCTYPE html>
 
@@ -37,7 +37,7 @@
                 <td width="90%">
                     <asp:UpdatePanel ID="upbutton" runat="server">
                         <ContentTemplate>
-                             <asp:Button ID="btCommit" runat="server" Text="提 交" SkinID="anniu" Width="100px" OnClick="btnCommit_Click" />&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="btCommit" runat="server" Text="提 交" SkinID="anniu" Width="100px" OnClick="btnCommit_Click" />&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="btnReview" runat="server" Text="预 览" SkinID="anniu" Width="100px" />&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="btnClear" runat="server" Text="清 空" SkinID="anniu" Width="100px" CausesValidation="false" OnClick="btnClear_Click" />
                         </ContentTemplate>
