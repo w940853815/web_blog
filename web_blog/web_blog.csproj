@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="AjaxService.asmx" />
     <Content Include="Guanli.aspx" />
+    <Content Include="help\QQ图片20161114163318.png" />
+    <Content Include="help\QQ图片20161114163449.png" />
     <Content Include="Huifu.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="LiuyanFen.aspx" />
@@ -127,10 +129,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Code\" />
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
